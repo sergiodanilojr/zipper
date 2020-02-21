@@ -189,14 +189,34 @@ class Zipper
     private function destiny(string $file): string
     {
         if (!is_null($dataFile = $this->dataFile($file)) && !is_null($this->path)) {
-            $pathSave = $this->checkDir($this->path) . "/" . $dataFile->filename . "." . self::DEFAULT_EXTENSION;
+            $pathSave = $this->checkDir($this->path) . "/" . $this->setFileName($file) . "." . self::DEFAULT_EXTENSION;
         } else {
-            $pathSave = $dataFile->dirname . "/" . $dataFile->filename . "." . self::DEFAULT_EXTENSION;
+            $pathSave = $dataFile->dirname . "/" . $this->setFileName($file) . "." . self::DEFAULT_EXTENSION;
         }
         $this->path = $pathSave;
         return $this->path;
     }
 
+    /**
+     * @param $file
+     * @return string
+     */
+    public function setFileName($file): string
+    {
+        $dataFile = $this->dataFile($file);
+        $path = (!empty($this->path) ? $this->path : $dataFile->dirname);
+
+        $directory = scandir($path);
+        $filename = $this->dataFile($file)->filename;
+        if (!empty($directory)) {
+            foreach ($directory as $item) {
+                if (pathinfo($item)["filename"] == pathinfo($file)["filename"]) {
+                    $filename = $this->dataFile($file)->filename . "-" . (string)time();
+                }
+            }
+        }
+        return $filename;
+    }
 
     /**
      * @param string $path
