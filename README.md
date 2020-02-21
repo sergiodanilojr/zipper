@@ -1,4 +1,4 @@
-# zipper Name
+# Zipper
 
 [![Maintainer](http://img.shields.io/badge/maintainer-@sergiodanilojr-blue.svg?style=flat-square)](https://twitter.com/sergiodanilojr)
 [![Source Code](http://img.shields.io/badge/source-sergiodanilojr/zipper-blue.svg?style=flat-square)](https://github.com/sergiodanilojr/zipper)
