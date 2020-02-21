@@ -146,15 +146,15 @@ class Zipper
     public function download($path): bool
     {
         $fileZip = $this->zipFile($path);
-        if (file_exists($fileZip) && !is_dir($fileZip)) {
-            if (!is_null($dataFile = $this->dataFile($fileZip))) {
-                header("Content-Type: application/zip");
-                header("Content-Lenght: " . filesize($fileZip));
-                header("Content-Disposition: attachment; filename=" . $dataFile->filename);
-                readfile($fileZip);
-                unlink($fileZip);
-                return true;
-            }
+        $fileZip = $fileZip . "." . self::DEFAULT_EXTENSION;
+        if (file_exists($fileZip) && !is_dir($fileZip) && !is_null($fileZip)) {
+
+            header("Content-Type: application/zip");
+            header("Content-Lenght: " . filesize($fileZip));
+            header("Content-Disposition: attachment; filename=" . $fileZip);
+            readfile($fileZip);
+            unlink($fileZip);
+            return true;
         }
         return false;
     }
