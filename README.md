@@ -17,7 +17,8 @@ Você pode saber mais **[clicando aqui](https://www.sergiodanilojr.com.br/compon
 
 ### Highlights
 
-- Hall of Highlights
+- Simple installation (Instalação simples)
+- Facilitates how to handle zip files by writing less code
 - Composer ready and PSR-2 compliant (Pronto para o composer e compatível com PSR-2)
 
 ## Installation
