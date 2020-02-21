@@ -164,10 +164,9 @@ class Zipper
                 unlink($fileZip);
                 return true;
             }
-        } else {
-            return false;
         }
-    }
+        return false;
+     }
 
 
     /**
