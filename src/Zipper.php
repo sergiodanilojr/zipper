@@ -49,7 +49,7 @@ class Zipper
     /**
      * @return string
      */
-    public function message(): string
+    public function message():string
     {
         return $this->message;
     }
@@ -164,8 +164,9 @@ class Zipper
                 unlink($fileZip);
                 return true;
             }
+        } else {
+            return false;
         }
-        return false;
     }
 
 
