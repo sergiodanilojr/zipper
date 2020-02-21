@@ -7,7 +7,7 @@ use SergioDaniloJr\Zipper\Zipper;
 
 $zipper = new Zipper();
 
-$fileExample = __DIR__."/assets/files/example-file.txt";
+$fileExample = __DIR__ . "/assets/files/example-file.txt";
 
 $single = $zipper->zipFile($fileExample);
 
