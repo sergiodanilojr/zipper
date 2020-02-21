@@ -42,18 +42,16 @@ class Zipper
     public function __construct(string $pathSave = null)
     {
         $this->zip = new \ZipArchive();
-
         $this->path = $pathSave;
     }
 
     /**
      * @return string
      */
-    public function message():string
+    public function message(): string
     {
         return $this->message;
     }
-
 
     /**
      * @return mixed
@@ -62,7 +60,6 @@ class Zipper
     {
         return $this->file;
     }
-
 
     /**
      * @param string $file
@@ -83,10 +80,8 @@ class Zipper
                 $this->file = $path;
                 return $this->file();
             }
-
-        } else {
-            return null;
         }
+        return null;
     }
 
 
@@ -122,7 +117,6 @@ class Zipper
         return $this->file();
     }
 
-
     /**
      * @param string $file
      * @param string|null $destiny
@@ -140,13 +134,10 @@ class Zipper
             }
             $saved = $destiny . "/" . $dataFile->basename;
             return $this->checkDir($saved);
-
-        } else {
-            return null;
         }
 
+        return null;
     }
-
 
     /**
      * @param $path
@@ -164,9 +155,8 @@ class Zipper
                 unlink($fileZip);
                 return true;
             }
-        } else {
-            return false;
         }
+        return false;
     }
 
 

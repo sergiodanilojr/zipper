@@ -11,7 +11,7 @@
 
 ###### Zipper is a facilitator for creating Zip Files in an uncomplicated way, with features of Download, insertion of License and Extraction Files and Creation of Zipping with multiples in one!
 
-Zipper é um facilitador para criação de Arquivos Zip de maneira descomplicada, contando com recursos de Download, inserção de Arquvios de Licença e Extração e Criação de Zipagem com múltiplos em um só!
+Zipper é um facilitador para criação de Arquivos Zip de maneira descomplicada, contando com recursos de Download, inserção de Arquivos, Extração e Criação de Zipagem com múltiplos em um só!
 
 Você pode saber mais **[clicando aqui](https://www.sergiodanilojr.com.br/componentes/zipper)**.
 
@@ -57,9 +57,6 @@ $single = $zipper->zipFile($fileExample);
 
 //It'll bring the way of the zip File
 echo $single;
-
-
-
 ```
 
 #### Zipper for Several Files
