@@ -210,11 +210,12 @@ class Zipper
         $filename = $this->dataFile($file)->filename;
         if (!empty($directory)) {
             foreach ($directory as $item) {
-                if (pathinfo($item)["filename"] == pathinfo($file)["filename"]) {
-                    $filename = $this->dataFile($file)->filename . "-" . (string)time();
+                if (pathinfo($item)["filename"] === pathinfo($file)["filename"]) {
+                    $name = $this->dataFile($file)->filename . "-" . (string)time();
                 }
             }
         }
+        $filename = (isset($name) ? $name : $filename);
         return $filename;
     }
 
