@@ -148,7 +148,7 @@ class Zipper
         $fileZip = $this->zipFile($path);
 
         if (file_exists($fileZip) && !is_dir($fileZip) && !is_null($fileZip)) {
-            $fileName = pathinfo($fileZip)["basename"] . "." . self::DEFAULT_EXTENSION;
+            $fileName = pathinfo($fileZip)["basename"];
             header("Content-Type: application/zip");
             header('Content-Lenght:' . filesize($fileZip));
             header('Content-Disposition: attachment; filename="' . $fileName . '"');
