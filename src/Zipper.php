@@ -156,7 +156,7 @@ class Zipper
     {
         $fileZip = $this->zipFile($path);
         if (file_exists($fileZip) && !is_dir($fileZip)) {
-            if (!is_null($dataFile = $this->dataFile($fileZip))) {
+            if (!is_null(/** @scrutinizer ignore-type */ $dataFile = $this->dataFile($fileZip))) {
                 header("Content-Type: application/zip");
                 header("Content-Lenght: " . filesize($fileZip));
                 header("Content-Disposition: attachment; filename=" . $dataFile->filename);
