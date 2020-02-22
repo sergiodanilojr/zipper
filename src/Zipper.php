@@ -150,6 +150,7 @@ class Zipper
         if (file_exists($fileZip) && !is_dir($fileZip) && !is_null($fileZip)) {
             $fileName = pathinfo($fileZip)["basename"];
             header("Content-Type: application/zip");
+            header("Content-Transfer-Encoding: Binary");
             header('Content-Lenght:' . filesize($fileZip));
             header('Content-Disposition: attachment; filename="' . $fileName . '"');
             readfile($fileZip);
