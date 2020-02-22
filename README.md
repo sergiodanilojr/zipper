@@ -9,7 +9,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/sergiodanilojr/zipper.svg?style=flat-square)](https://scrutinizer-ci.com/g/sergiodanilojr/zipper)
 [![Total Downloads](https://img.shields.io/packagist/dt/sergiodanilojr/zipper.svg?style=flat-square)](https://packagist.org/packages/csergiodanilojr/zipper)
 
-###### Zipper is a facilitator for creating Zip Files in an uncomplicated way, with features of Download, insertion of License and Extraction Files and Creation of Zipping with multiples in one!
+###### Zipper is a facilitator for creating Zip Files in an uncomplicated way, with features of Download, Insert Files, Extraction and Creation of Zip with multiple in one!
 
 Zipper é um facilitador para criação de Arquivos Zip de maneira descomplicada, contando com recursos de Download, inserção de Arquivos, Extração e Criação de Zipagem com múltiplos em um só!
 
