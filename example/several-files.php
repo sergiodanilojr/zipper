@@ -7,8 +7,8 @@ use SergioDaniloJr\Zipper\Zipper;
 
 $zipper = new Zipper();
 
-$fileOne = __DIR__."/assets/files/example-file.txt";
-$fileTwo = __DIR__."/assets/files/example-file-two.txt";
+$fileOne = __DIR__ . "/assets/files/example-file.txt";
+$fileTwo = __DIR__ . "/assets/files/example-file-two.txt";
 
 $files = [
     $fileOne,
@@ -16,7 +16,7 @@ $files = [
 ];
 
 //Here I'll set a new folder that not exists yet.
-$path = __DIR__."/assets/files/ZipperFiles";
+$path = __DIR__ . "/assets/files/ZipperFiles";
 
 $several = $zipper->zipFiles($files, "MadeWithZipper", $path);
 
