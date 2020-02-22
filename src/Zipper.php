@@ -70,7 +70,6 @@ class Zipper
         if (!is_null($dataFile = $this->dataFile($file))) {
 
             $path = $this->destiny($file);
-            // $this->zip = new \ZipArchive();
             if ($this->zip->open($path, $this->zip::CREATE) === true) {
                 $bool = $this->zip->addFile($file, $dataFile->basename);
                 $this->zip->close();
