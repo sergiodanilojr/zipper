@@ -130,7 +130,7 @@ $zipper->download($fileExample);
 
 ```
 
-### Zipper dialog about errors
+#### Zipper dialog about errors
 ```php
 <?php
 require __DIR__ . "/vendor/autoload.php";
