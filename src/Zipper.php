@@ -78,7 +78,7 @@ class Zipper
 
             if ($bool) {
                 $this->file = $path;
-                return $this->file();
+                return $this->file;
             }
         }
         return null;
