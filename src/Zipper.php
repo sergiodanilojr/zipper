@@ -204,7 +204,7 @@ class Zipper
      * @param $file
      * @return string
      */
-    public function setFileName($file): string
+    private function setFileName($file): string
     {
         $dataFile = $this->dataFile($file);
         $filename = $this->dataFile($file)->filename . "-" . (string)time();
