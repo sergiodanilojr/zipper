@@ -18,7 +18,11 @@ Você pode saber mais **[clicando aqui](https://www.sergiodanilojr.com.br/compon
 ### Highlights
 
 - Simple installation (Instalação simples)
-- Facilitates how to handle zip files by writing less code
+- You can Extract Zip Files (Você pode extrair arquivos zip)
+- You can Create a Zip File with how many you want (É possível criar Arquivos Zip com quantos arquivos desejar)
+- There is a layer to show error messages (Possui mensagens, caso um erro impeça a execução desejada)
+- With Zipper is so easy force a download of any file with only one line of code (Com o Zipper é uito fácil forçar o download de qualquer arquivo com somente uma linha de código)
+- Facilitates how to handle zip files by writing less code (Facilita a manipulação de Arquivos Zip escrevendo menos código)
 - Composer ready and PSR-2 compliant (Pronto para o composer e compatível com PSR-2)
 
 ## Installation
@@ -109,7 +113,7 @@ echo $extracted;
 ```
 
 
-#### Zipper for Download a File zipped
+#### Zipper for Download a File
 
 ```php
 <?php
@@ -126,11 +130,28 @@ $zipper->download($fileExample);
 
 ```
 
+### Zipper dialog about errors
+```php
+<?php
+require __DIR__ . "/vendor/autoload.php";
+
+use SergioDaniloJr\Zipper\Zipper;
+
+$zipper = new Zipper();
+
+//When there'is an error, you can calll the message method for show the error message, it comes like a 'string' type
+
+$zipper->message();
+
+```
+
+
 ### Others
 
 ###### Here is possible write about others explanations...
 
-Aqui você pode mencionar outras características do zipper
+- When you set a folder that not exists, the Zipper Component create the folder for you easyly!
+
 
 ## Contributing
 
@@ -142,7 +163,10 @@ Please see [CONTRIBUTING](https://github.com/sergiodanilojr/zipper/blob/master/C
 
 Se você descobrir algum problema relacionado à segurança, envie um e-mail para sergiodanilojr@hotmail.com em vez de usar o rastreador de problemas.
 
+The Develoer pretends continue improving this component!
+
 Thank you
+
 
 ## Credits
 
