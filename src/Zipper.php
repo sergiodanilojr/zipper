@@ -154,7 +154,7 @@ class Zipper
             header('Content-Lenght:' . filesize($fileZip));
             header('Content-Disposition: attachment; filename="' . $fileName . '"');
             readfile($fileZip);
-            unlink($fileZip);
+            //unlink($fileZip);
             return true;
         }
         return false;
