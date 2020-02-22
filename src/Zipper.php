@@ -129,14 +129,14 @@ class Zipper
     {
         if (!is_null($dataFile = $this->dataFile($file))) {
 
-            $destiny = (!is_null($destiny) ? $this->checkDir($destiny) : $dataFile->dirname);
+            $destiny = (!is_null($destiny) ? $this->checkDir($destiny) : $this->checkDir($dataFile->dirname));
 
             if ($this->zip->open($file) === true) {
                 $this->zip->extractTo($destiny);
                 $this->zip->close();
             }
-            $saved = $destiny . "/" . $dataFile->basename;
-            return $saved;
+
+            return $destiny;
         }
         $this->message = "Algo Impossibilitou a Extração do Arquivo!";
         return null;
