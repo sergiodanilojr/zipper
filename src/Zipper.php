@@ -131,8 +131,8 @@ class Zipper
 
             $destiny = (!is_null($destiny) ? $destiny : $dataFile->dirname);
 
-            if ($this->zip->open($file) === TRUE) {
-                $this->zip->extractTo($destiny);
+            if ($this->zip->open($file) === true) {
+                $this->zip->extractTo($this->checkDir($destiny));
                 $this->zip->close();
             }
             $saved = $destiny . "/" . $dataFile->basename;
