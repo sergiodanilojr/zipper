@@ -95,7 +95,7 @@ class Zipper
      */
     public function zipFiles(array $files, string $nameFile, string $path = null): ?string
     {
-        $path = (!is_null($this->path) ? $this->path : $path);
+        $path = ($this->path ?? $path);
         if (!$path) {
             $this->message = "Forneça um Caminho para Salvar o Arquivo!";
             return null;

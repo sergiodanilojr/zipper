@@ -7,7 +7,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Build](https://img.shields.io/scrutinizer/build/g/sergiodanilojr/zipper.svg?style=flat-square)](https://scrutinizer-ci.com/g/sergiodanilojr/zipper)
 [![Quality Score](https://img.shields.io/scrutinizer/g/sergiodanilojr/zipper.svg?style=flat-square)](https://scrutinizer-ci.com/g/sergiodanilojr/zipper)
-[![Total Downloads](https://img.shields.io/packagist/dt/sergiodanilojr/zipper.svg?style=flat-square)](https://packagist.org/packages/csergiodanilojr/zipper)
+[![Total Downloads](https://img.shields.io/packagist/dt/sergiodanilojr/zipper.svg?style=flat-square)](https://packagist.org/packages/sergiodanilojr/zipper)
 
 ###### Zipper is a facilitator for creating Zip Files in an uncomplicated way, with features of Download, Insert Files, Extraction and Creation of Zip with multiple in one!
 
