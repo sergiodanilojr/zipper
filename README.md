@@ -139,7 +139,7 @@ use SergioDaniloJr\Zipper\Zipper;
 
 $path = __DIR__."/ZipperFolder";
 
-// Like that you st a Default path to use for save a Zip File with the methods said above.
+// Like that you can set a default folder for save the zip files generated with the methods above.
 $zipper = new Zipper($path);
 
 // NOTE: If you set a folder that not exist, Zipper understanding this and will create a new folder like you want! Zipper's Wonderful, no?!
