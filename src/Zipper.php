@@ -31,7 +31,7 @@ class Zipper
     private $message;
 
     /**
-     *Default Extension
+     * Default Extension
      */
     const DEFAULT_EXTENSION = "zip";
 
@@ -84,6 +84,7 @@ class Zipper
             $this->message = "Algo deu errado ao Zipar!";
             return null;
         }
+        return null;
     }
 
 
